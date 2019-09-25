@@ -10,6 +10,7 @@ import invariant from 'invariant'
 import { useReduxContext as useDefaultReduxContext } from './useReduxContext'
 import Subscription from '../utils/Subscription'
 import { ReactReduxContext } from '../components/Context'
+import { RootState } from './store'
 
 // React currently throws a warning when using useLayoutEffect on the server.
 // To get around it, we can conditionally useEffect on the server (no-op) and
